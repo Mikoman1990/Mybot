@@ -648,7 +648,7 @@ async def download_video(v_url):
     if song:
         await v_url.edit(f"`Preparing to upload song:`\
         \n**{rip_data['title']}**\
-        \nby *{rip_data['uploader']}*")
+        \nby _{rip_data['uploader']}_")
         await v_url.client.send_file(
             v_url.chat_id,
             f"{rip_data['id']}.mp3",
